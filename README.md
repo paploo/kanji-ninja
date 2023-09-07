@@ -19,3 +19,7 @@ To build an image for another architecutre, and export to file:
 docker buildx build --platform=linux/amd64 -t kanji-ninja:latest-amd64 .
 docker save --output kanji-ninja-amd64.tar kanji-ninja:latest-amd64
 ```
+
+To update KanjiVG:
+1. Update the [fork of KanjiVG](https://github.com/paploo/kanjivg), and
+2. Copy into `img` all the files from `kanjivg` except for the git repository itself.
